@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="designCalculator.css">
+        <title>Calculator</title>
+    </head>
+
+    <form name="NewForm" class="calci" action="attractive_calculator.html" method="POST">
+<input type="text" name ="answer">
+<br>
+    </br>
+
+<input type="button" class="btndesign" value="9" onclick="NewForm.answer.value+='9'">
+<input type="button" class="btndesign" value="8" onclick="NewForm.answer.value+='8'">
+<input type="button" class="btndesign" value="7" onclick="NewForm.answer.value+='7'">
+<input type="button" class="btndesign" value="+" onclick="NewForm.answer.value+='+'">
+
+
+<input type="button" class="operatorDesign" value="6" onclick="NewForm.answer.value+='6'">
+<input type="button" class="btndesign" value="5" onclick="NewForm.answer.value+='5'">
+<input type="button" class="btndesign" value="4" onclick="NewForm.answer.value+='4'">
+<input type="button" class="btndesign" value="-" onclick="NewForm.answer.value+='-'">
+
+
+<input type="button" class="btndesign" value="3" onclick="NewForm.answer.value+='3'">
+<input type="button" class="operatorDesign" value="2" onclick="NewForm.answer.value+='2'">
+<input type="button" class="btndesign" value="1" onclick="NewForm.answer.value+='1'">
+<input type="button" class="operatorDesign" value="*" onclick="NewForm.answer.value+='*'">
+
+<input type="button" id="zero" value="0" onclick="NewForm.answer.value+='0'">
+<input type="button" class="btndesign" value="/" onclick="NewForm.answer.value+='/'">
+<input type="button" class="btndesign" value="00" onclick="NewForm.answer.value+='00'">
+<input type="button" class="btndesign" value="%" onclick="NewForm.answer.value+='%'">
+
+
+<input type="button" class="btndesign" value="C" onclick="NewForm.answer.value =''">
+<input type="button" class="btndesign" value="<" onclick="NewForm.answer.value+=NewForm.answer.value.substring(0,NewForm.answer.value.length*1-1)">
+<input type="button" class="operatorDesign" value="." onclick="NewForm.answer.value+='.'">
+<input type="button" class="operatorDesign" value="=" onclick="NewForm.answer.value=eval(NewForm.answer.value)">
+<br>
+</br>
+
+    </form>
+</html>
